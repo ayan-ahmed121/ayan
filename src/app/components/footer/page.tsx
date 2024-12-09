@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="">
               <h1 className="text-black font-extrabold mb-4 text-3xl">Shop.co</h1>
               <p>
-                We have clothes that suit your style and which you're proud to
+                We have clothes that suit your style and which youre proud to
                 wear. From women to men.
               </p>
               <div className="flex items-center space-x-4 mt-6">
