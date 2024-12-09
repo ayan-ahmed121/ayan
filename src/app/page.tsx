@@ -1,6 +1,5 @@
 import Category from "@/components/category";
 import Header from "./components/header/page";
-
 import Banner from "@/components/banner";
 import Logo from "@/components/logogroup";
 import Arrival from "@/components/new arrival";
