@@ -11,7 +11,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import toast from "react-hot-toast";
 import { client } from "../../sanity/lib/client";
 import Swal from "sweetalert2";
-import Checkoutpayment from "@/components/CheckoutPage"
+import Checkoutpayment from "../../components/CheckoutPage"
 import { Item } from "@radix-ui/react-dropdown-menu";
 import { Elements } from "@stripe/react-stripe-js";
 
@@ -30,7 +30,7 @@ export default function CheckoutPage() {
   });
 
   const deliveryFee = 15; // Fixed delivery fee
-  const subtotal = cartItems.reduce((total, item) => total + deliveryFee +  item.price * item.quantity, 0);
+  const subtotal = cartItems.reduce((total: number, item: { price: number; quantity: number; }) => total + deliveryFee +  item.price * item.quantity, 0);
   const discount = subtotal * 0.2; // 20% discount
  const total = subtotal - discount;
 
@@ -82,7 +82,7 @@ export default function CheckoutPage() {
       zipCode: formValues.zipCode,
       phone: formValues.phone,
       email: formValues.email,
-      cartItems: cartItems.map(item => ({
+      cartItems: cartItems.map((item: { id: any; }) => ({
         _type: 'reference',
         _ref: item.id,  // Assuming cartItems have the correct product references
       })),

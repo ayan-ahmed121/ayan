@@ -1,10 +1,10 @@
 "use client";
 import React from 'react'
 import Image from 'next/image';
-import p1 from "@/public/images/dress-style-1.png"
-import p2 from "@/public/images/dress-style-2.png"
-import p3 from "@/public/images/dress-style-3.png"
-import p4 from "@/public/images/dress-style-4.png"
+import p1 from "../../public/images/dress-style-1.png"
+import p2 from "../../public/images/dress-style-2.png"
+import p3 from "../../public/images/dress-style-3.png"
+import p4 from "../../public/images/dress-style-4.png"
 
 
 export default function DressStyle() {
