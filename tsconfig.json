@@ -12,13 +12,21 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+<<<<<<< HEAD
+=======
+    "typeRoots": ["node_modules/@types", "src/types"],
+>>>>>>> 6d9faf5 (Initial commit)
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
+<<<<<<< HEAD
       "@/*": ["./src/*"]
+=======
+      "@/*": ["./*"]
+>>>>>>> 6d9faf5 (Initial commit)
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
