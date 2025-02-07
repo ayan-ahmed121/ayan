@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 import { client } from "../../sanity/lib/client";
 import { urlFor } from "../../sanity/lib/image";
 import Paginationpage from "../../components/pagination";
-import { BreadcrumbCollapsed } from "@/components/Breadcrupm";
+import  BreadcrumbCollapsed  from "../../components/Breadcrupm";
 interface Product {
     _id: string;
     name: string;
