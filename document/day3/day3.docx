@@ -1,0 +1,96 @@
+**Day 3 – API Integration Report for Shop**
+
+**1. Introduction**
+
+This report outlines the integration process of product and category data from an external API into the backend system of Shop.co, a clothing e-commerce platform. The integration leverages Sanity CMS for content management and Next.js for frontend rendering.
+
+The main objectives of this integration were:
+
+1. Fetching data from an external API.  
+2. Storing and managing the data in Sanity CMS.  
+3. Displaying the fetched data dynamically on the frontend.  
+
+---
+
+**2. API Integration Process**
+
+**Step 1: Fetching Data from API**
+
+The API provided the following endpoints:
+
+- **Products Endpoint:** Includes details such as titles, prices, descriptions, categories, inventory, and images.
+
+**Base API URL:**  
+https://template1-neon-nu.vercel.app/api/products
+
+**Step 2: Migrating Data to Sanity CMS**
+
+The fetched data was structured and stored in Sanity CMS using its JavaScript client library. The product schema was updated to include additional fields for more detailed data management.
+
+**Key Schema Fields:**
+
+- **title:** Name of the product.  
+- **priceWithoutDiscount:** Original price before any discounts.  
+- **badge:** Promotional labels such as "Sale" or "New Arrival".  
+- **category:** References the category associated with the product.  
+- **image:** Image URL for the product.  
+- **inventory:** Stock level of the product.  
+- **tags:** Tags like "Featured" or "Trending" for categorization.  
+
+---
+
+**3. Frontend Integration**
+
+**Step 3: Rendering Data on Frontend**
+
+The next step was to fetch the stored data from Sanity CMS and display it on the Shop.co frontend. Using Next.js, the fetched data was dynamically rendered into the product listing UI.
+
+**Code Example for Fetching Data in Frontend:**
+
+```javascript
+import { useEffect, useState } from 'react';
+import sanityClient from '@sanity/client';
+
+const client = sanityClient({
+  projectId: 'kecfv8b1',
+  dataset: 'production',
+  useCdn: true,
+});
+
+const fetchProducts = async () => {
+  const query = '*[_type == "product"]';
+  const data = await client.fetch(query);
+  return data;
+};
+
+export default function ProductList() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetchProducts().then(setProducts);
+  }, []);
+
+  return (
+    <div>
+      {products.map((product) => (
+        <div key={product._id}>
+          <h2>{product.title}</h2>
+          <p>Price: ${product.priceWithoutDiscount}</p>
+          <img src={product.image} alt={product.title} />
+        </div>
+      ))}
+    </div>
+  );
+}
+```
+
+**Product Display:**
+
+Below is a screenshot of the product listing page, showing products dynamically rendered on the frontend.
+
+---
+
+**4. Conclusion**
+
+The API integration for Shop.co was successfully completed. The process included fetching data, storing it in Sanity CMS, and rendering it dynamically on the frontend. Screenshots attached validate the successful implementation at every step. This integration ensures that product and category management is streamlined, providing a seamless experience for both administrators and users.
+

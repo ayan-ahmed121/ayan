@@ -1,0 +1,56 @@
+**Day 6 — Deployment Preparation & Staging Environment Configuration**
+
+---
+
+**1. Hosting Platform Setup & Configuration**
+
+- **Platform Chosen:** Vercel  
+  [Deployed Application](https://hackathone-figma-24-hour.vercel.app/)
+- **Integration with GitHub:**  
+  [GitHub Repository](https://github.com/khanaleema/Hackathone-figma-24-hour)
+- **Build Settings:** Custom build settings were applied for optimal performance and security.
+- **Environment Variables:** Specific environment variables were added for secure deployment configuration.
+
+---
+
+**2. Secure Environment Variables Configuration**
+
+- Created a `.env` file containing key environment variables for secure handling:
+  - `NEXT_PUBLIC_SANITY_PROJECT_ID`: Sanity project's unique identifier.
+  - `NEXT_PUBLIC_SANITY_DATASET`: The dataset name used for production data.
+  - `API_KEY`: Key for third-party services integration.
+- **Vercel Upload:** Securely uploaded environment variables to Vercel for the deployment.
+
+---
+
+**3. Staging Deployment & Verification Process**
+
+- The application was deployed to Vercel’s staging environment.
+- **Deployment Status:** The build process completed without issues.
+- **Site Loading Test:** Thoroughly verified that the staging site loaded and functioned correctly.
+
+  [Staging Deployment](https://hackathone-figma-24-hour.vercel.app/)
+
+  [GitHub Repository](https://github.com/khanaleema/Hackathone-figma-24-hour)
+
+---
+
+**Performance Testing & Evaluation**
+
+**4. Performance Metrics for Desktop**
+
+- **Page Load Speed:** Ensured optimal load speed for desktop devices.
+- **Browser Compatibility:** Verified functionality across multiple browsers for consistent user experience.
+
+**5. Mobile Performance Review**
+
+- **Mobile Responsiveness:** Conducted tests to confirm mobile-friendly behavior.
+- **Page Speed on Mobile:** Optimized performance for mobile users, ensuring a seamless experience.
+
+---
+
+**Form Submission & User Journey Evaluation**
+
+- Tested form submission functionality to confirm data handling and validation.
+- Evaluated the user journey to ensure smooth navigation and interaction across all features.
+

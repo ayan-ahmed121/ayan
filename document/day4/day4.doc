@@ -1,0 +1,100 @@
+**Day 4 – Dynamic Frontend Components Report for Shop**
+
+**1. Introduction**
+
+This report highlights the creation of dynamic and responsive frontend components for Shop.co, focusing on:
+
+1. Displaying products dynamically.
+2. Adding a search bar and filters.
+3. Displaying the Product Listing Page.
+4. Adding a Product Detail Page.
+5. Building a functional cart for managing orders.
+
+---
+
+**2. Tasks Overview**
+
+**Step 1: Product Listing**
+
+- Dynamically fetched product data from the API.
+- Displayed products in a responsive grid layout with names and prices.
+
+**Step 2: Product Detail Page**
+
+- Created a detailed view for each product with dynamic routing.
+- Added an "Add to Cart" button.
+
+**Step 3: Category Component**
+
+- Fetch categories dynamically from the data source.
+- Allow filtering of products by selected categories.
+
+**Step 4: Search Bar and Filters**
+
+- Designed a search bar to filter products in real time.
+- Integrated category filters fetched from the API.
+
+**Step 5: Cart Functionality**
+
+- Enabled users to add/remove products in the cart.
+- Implemented dynamic cart updates and a checkout button.
+- When users click on the "Add to Cart" button with selected colors, sizes, and product quantity, items are successfully added to the shopping cart.
+
+**Step 6: Checkout Successfully**
+
+- When users click on the checkout button, it renders the checkout page.
+- Users can add checkout details and proceed with the purchase.
+
+---
+
+**Self-Validation Checklist for Frontend Development**
+
+| Frontend Component Development  | ✔ | ✘ |
+|---------------------------------|---|---|
+| Dynamic product listing         | ✔ |   |
+| Product detail page functionality | ✔ |   |
+| Category filter component       | ✔ |   |
+| Search bar functionality        | ✔ |   |
+| Cart functionality (add/remove items) | ✔ |   |
+| Checkout functionality         | ✘ |   |
+| Login/SignUp Page              | ✘ |   |
+
+| Styling and Responsiveness      | ✔ | ✘ |
+|---------------------------------|---|---|
+| Responsive grid layout for product listings | ✔ |   |
+| Consistent UI design across all pages | ✔ |   |
+| Mobile responsiveness           | ✔ |   |
+
+| Code Quality                    | ✔ | ✘ |
+|---------------------------------|---|---|
+| Modular and reusable components | ✔ |   |
+| Clean and organized code structure | ✔ |   |
+| Proper use of state management and data binding | ✔ |   |
+| Optimization for performance and loading speed | ✔ |   |
+
+| Documentation and Submission     | ✔ | ✘ |
+|---------------------------------|---|---|
+| Clear documentation for each component | ✔ |   |
+| Steps for setting up and running the application | ✔ |   |
+| Code comments and explanations  | ✔ |   |
+| Submission before the deadline  | ✔ |   |
+
+| Final Review                     | ✔ | ✘ |
+|---------------------------------|---|---|
+| All functionality tested (products, cart, checkout) | ✔ |   |
+| UI/UX reviewed for user-friendliness | ✔ |   |
+| No bugs/issues identified in the development | ✔ |   |
+
+| Professional Practices Emphasized | ✔ | ✘ |
+|---------------------------------|---|---|
+| Modular and reusable component design | ✔ |   |
+| State management and dynamic data binding | ✔ |   |
+| Responsive and user-friendly UI design | ✔ |   |
+| Thorough documentation for code and processes | ✔ |   |
+
+---
+
+**3. Conclusion**
+
+The dynamic frontend components were successfully built, enhancing the user experience with responsive layouts, dynamic filtering, and cart functionality. Screenshots validate the completed work.
+
