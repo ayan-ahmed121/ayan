@@ -1,0 +1,11 @@
+Test Case ID,Feature Tested,Test Scenario,Test Steps,Expected Outcome,Actual Outcome,Status,Priority,Notes
+TC001,Homepage Load,Ensure homepage loads within 2 seconds,Open browser, enter URL, measure load time,Page loads in <2s,Page loads in 3s,Fail,High,Optimize images and enable caching
+TC002,Navigation Links,Verify all menu links work properly,Click on each navigation link and check redirection,All links should navigate correctly,Some links are broken,Fail,Medium,Fix broken links
+TC003,Mobile Responsiveness,Check if the website adapts to different screen sizes,Open site on mobile and tablet,All elements should be properly aligned,Some elements overlap,Fail,High,Adjust CSS for responsiveness
+TC004,Login Functionality,Ensure login works with valid credentials,Enter correct username and password,User should be logged in,Login successful,Pass,High,None
+TC005,Invalid Login,Check login with incorrect credentials,Enter incorrect username and password,Error message should be displayed,Error displayed,Pass,Medium,None
+TC006,Sign Up Form,Verify that the signup form works,Fill the signup form with valid details and submit,User should be registered,Form submission successful,Pass,Medium,None
+TC007,Page Speed Optimization,Ensure the site loads efficiently,Run PageSpeed Insights test,Performance score should be above 90,Score is 85,Fail,Medium,Minify CSS/JS, optimize images
+TC008,SEO Optimization,Check SEO meta tags and performance,Inspect meta tags and run SEO test,Meta tags should be present,Meta tags missing,Fail,Low,Add proper meta tags
+TC009,Form Validation,Ensure all forms have proper validation,Try submitting form with missing fields,Error message should appear,Validation error displayed,Pass,High,None
+TC010,404 Page,Check if non-existing pages show 404 error,Enter invalid URL,User should see a 404 error page,Proper 404 page displayed,Pass,Medium,None
