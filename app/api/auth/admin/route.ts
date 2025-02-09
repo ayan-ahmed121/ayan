@@ -9,7 +9,7 @@ export async function POST(request: NextRequest){
     try {
       const {email, password} = await request.json()
 
-      if(email === "programingmaster22@gmail.com" && password === "ahmedraja122"){
+      if(email === "ayanshaikh5377@gmail.com" && password === "Karachi"){
         cookieStore.set("IsLogin", "1",{
             httpOnly: true
         })

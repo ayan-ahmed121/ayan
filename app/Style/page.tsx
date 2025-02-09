@@ -19,25 +19,25 @@ export default function DressStyle() {
     {/* Grid Section */}
     <div className="mt-12 sm:mt-16 lg:mt-20 gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[10rem] sm:auto-rows-[14rem] lg:auto-rows-[18rem]">
       {/* Casual */}
-      <div className="bg1 bg-white text-black rounded-lg p-4 flex items-start">
+      <div className="bg-white text-black rounded-lg p-4 flex items-start">
         <h1 className="text-[20px] sm:text-[28px] lg:text-[36px] font-bold">Casual</h1>
         <Image src={p1} alt='casual' width={500} height={500}></Image>
       </div>
 
       {/* Formal */}
-      <div className="bg2 bg-white text-black rounded-lg p-4 sm:col-span-2 flex items-start">
+      <div className=" bg-white text-black rounded-lg p-4 sm:col-span-2 flex items-start">
         <h1 className="text-[20px] sm:text-[28px] lg:text-[36px] font-bold">Formal</h1>
         <Image src={p2} alt='formal' width={500} height={500}></Image>
       </div>
 
       {/* Party */}
-      <div className="bg3 bg-white text-black rounded-lg p-4 col-span-2 sm:col-span-1 lg:col-span-2 flex items-start">
+      <div className="bg-white text-black rounded-lg p-4 col-span-2 sm:col-span-1 lg:col-span-2 flex items-start">
         <h1 className="text-[20px] sm:text-[28px] lg:text-[36px] font-bold">Party</h1>
         <Image src={p3} alt='party' width={500} height={500}></Image>
       </div>
 
       {/* Gym */}
-      <div className="bg4 bg-white text-black rounded-lg p-4 flex items-start">
+      <div className=" bg-white text-black rounded-lg p-4 flex items-start">
         <h1 className="text-[20px] sm:text-[28px] lg:text-[36px] font-bold">Gym</h1>
         <Image src={p4} alt='gym' width={500} height={500}></Image>
       </div>

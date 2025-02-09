@@ -39,28 +39,6 @@
   /* Add other custom classes here */
 }
 
-.bg1 {
-  background-image: url("/images/bg1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-}
-
-.bg2 {
-  background-image: url("/images/bg3.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  position: relative;
-}
-
-.bg3 {
-  background-image: url("/images/bg4.png");
-  background-size: cover;
-  background-position: center left;
-  background-repeat: no-repeat;
-}
 
 .Homeh1 {
   font-family: "Anton", sans-serif;
